@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "8ceca8dc-a126-42bd-87f7-8590c6984b39",
+		"name": "Desafio Itaú Seguros",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12814757"
+	},
+	"item": [
+		{
+			"name": "Criar Novo Seguro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Teste seguro vida\",\n    \"categoria\": \"VIDA\",\n    \"preco_base\": 100\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/insurances",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"insurances"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Seguro Existente",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Teste novo nome seguro vida\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/insurances/2dc0d2ea-2efb-4d9a-ba81-094c56b7f693",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"insurances",
+						"2dc0d2ea-2efb-4d9a-ba81-094c56b7f693"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Seguro Pelo ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/insurances/UUID",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"insurances",
+						"UUID"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
