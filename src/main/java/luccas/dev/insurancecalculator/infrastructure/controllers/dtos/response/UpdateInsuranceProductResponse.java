@@ -2,7 +2,6 @@ package luccas.dev.insurancecalculator.infrastructure.controllers.dtos.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
-import lombok.Generated;
 import luccas.dev.insurancecalculator.domain.entity.InsuranceCategory;
 import luccas.dev.insurancecalculator.domain.entity.InsuranceProduct;
 

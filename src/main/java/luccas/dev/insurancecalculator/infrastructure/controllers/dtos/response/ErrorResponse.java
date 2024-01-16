@@ -1,6 +1,5 @@
 package luccas.dev.insurancecalculator.infrastructure.controllers.dtos.response;
 
-import lombok.Generated;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;

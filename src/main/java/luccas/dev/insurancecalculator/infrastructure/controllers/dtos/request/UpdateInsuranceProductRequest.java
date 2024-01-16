@@ -1,10 +1,7 @@
 package luccas.dev.insurancecalculator.infrastructure.controllers.dtos.request;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 import lombok.Builder;
-import lombok.Generated;
 import luccas.dev.insurancecalculator.domain.entity.InsuranceCategory;
 import luccas.dev.insurancecalculator.domain.entity.InsuranceProduct;
 

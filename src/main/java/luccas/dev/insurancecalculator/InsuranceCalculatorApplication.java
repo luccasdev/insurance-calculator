@@ -1,7 +1,6 @@
 package luccas.dev.insurancecalculator;
 
 import io.opentelemetry.exporter.otlp.trace.OtlpGrpcSpanExporter;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
