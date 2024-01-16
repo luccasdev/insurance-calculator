@@ -14,6 +14,7 @@ Sendo a principal caracteristica o cálculo automático do preço tarifado levan
 - Jaeger (Tracing)
 - Docker
 - Lombok
+- H2 DB
 
 ## Como executar o projeto
 O projeto foi configurado com o docker-compose, para rodar o projeto basta executar os seguintes comandos:
@@ -51,6 +52,9 @@ Foi decidido utilizar o Clean Architecture baseando-se em um cenário onde exist
 Essa abordagem permite separar as preocupações de negócios das implementações técnicas, facilitando a manutenção e o teste de cada componente de forma isolada. Além disso, a Clean Architecture promove a reutilização de código, escalabilidade e flexibilidade na evolução do sistema ao longo do tempo.
 
 Foi adaptado conforme a necessidade do projeto, mas mantendo os conceitos e ganhos da utilização desse padrão de arquitetura.
+
+#### Utilização do H2 DB:
+Foi escolhido o H2 DB, somente por conta da facilidade de execução do projeto, o H2 DB não deve ser levado em consideração para um cenário de ambiente de produção.
 
 #### Utilização do Jaeger:
 Baseando-se no cenário que em um sistema escalável e com diversos clientes em produção utilizando, se faz necessário ferramentas de tracing para facilitar o troubleshooting.
